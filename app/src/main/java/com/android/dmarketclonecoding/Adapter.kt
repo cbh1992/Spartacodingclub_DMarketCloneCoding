@@ -25,7 +25,7 @@ class Adapter(val mContext: Context, val mItems: MutableList<MyItem>) : BaseAdap
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
 
         var convertView = convertView
-        if (convertView == null) convertView = LayoutInflater.from(parent?.context).inflate(R.layout.item, parent, false)
+        if (convertView == null) convertView = LayoutInflater.from(parent?.context).inflate(R.layout.item_listview, parent, false)
 
         val item : MyItem = mItems[position]
 

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <ImageView
+        android:id="@+id/iconItem"
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size"
+        android:scaleType="centerCrop"
+        android:padding="@dimen/icon_padding"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:src="@drawable/sample1"
+        />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="3">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/list_item_padding"
+            android:textColor="@color/black"
+            android:textSize="@dimen/list_item_text_size1"
+            tools:ignore="SpUsage" />
+
+        <TextView
+            android:id="@+id/textRegion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/list_item_padding"
+            android:textColor="#BCB1AB"
+            android:textSize="@dimen/list_item_text_size2"
+            tools:ignore="SpUsage" />
+
+        <TextView
+            android:id="@+id/textPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/list_item_padding"
+            android:textColor="@color/black"
+            android:textSize="@dimen/list_item_text_size2"
+            tools:ignore="SpUsage" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -10,8 +10,16 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.DMarketCloneCoding"
+        android:theme="@style/Theme.CustomItemView"
         tools:targetApi="31">
+
+        <!--디테일 페이지로 넘겨주기-->
+       <!-- <activity
+            android:name=".DetailPage"
+            android:exported="false"/>
+            -->
+
+        <!--메인페이지-->
         <activity
             android:name=".MainActivity"
             android:exported="true">
